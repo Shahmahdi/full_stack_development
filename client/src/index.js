@@ -7,8 +7,9 @@ import { createStore, applyMiddleware } from 'redux';
 import registerServiceWorker from './registerServiceWorker';
 import reducers from './reducers';
 import './../node_modules/materialize-css/dist/css/materialize.min.css';
+import reduxThunk from 'redux-thunk';
 
-const store = createStore(reducers, {}, applyMiddleware());
+const store = createStore(reducers, {}, applyMiddleware(reduxThunk));
 
 ReactDOM.render(
 	<Provider store={store}>
