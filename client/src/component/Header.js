@@ -10,7 +10,7 @@ import { connect } from 'react-redux';
 			case false:
 				return <li><a href="/auth/google">Login with Google</a></li>
 			default:
-				return <li><a href="sass.html">Logout</a></li>
+				return <li><a href="/api/logout">Logout</a></li>
 		}
 	}
 
